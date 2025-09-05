@@ -50,7 +50,7 @@
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/WwCfOfficial/Pharos-Bot-V7.git
-   cd Pharos-Auto-Bot
+   cd Pharos-Bot-V7
    ```
 
 2. **Install Dependencies**:
@@ -60,16 +60,52 @@
    Installs `chalk`, `ethers`, `fs`, `cli-table3`, `axios`, `readline`, `crypto`, and others.
 
 3. **Set Up Wallet Files**:
-   - Create `wallets.txt` in the root directory with one private key per line:
-     ```text
-     0xYourPrivateKey1
-     0xYourPrivateKey2
-     ```
-   - Optionally, create `wallet.txt` for target wallet addresses:
-     ```text
-     0xTargetAddress1
-     0xTargetAddress2
-     ```
+   ## 3. Configure your keys and addresses
+
+The bot uses **two files**:
+
+- `wallets.txt` → contains **private keys** (one per line)  
+- `wallet.txt` → contains **public addresses** (friends / receivers, optional)
+
+Create `wallets.txt` (⚠️ private keys, keep safe!):
+
+```bash
+nano wallets.txt
+```
+
+Example:
+```
+0xYOURPRIVATEKEY_1 **public addresses**
+0xYOURPRIVATEKEY_2 **private keys**
+```
+Then,
+CTRL+O and Enter
+CTRL+X and Enter
+saved 
+
+Create `wallet.txt` (optional, for send-to-friends features):
+
+```bash
+nano wallet.txt
+```
+
+Example:
+```
+0xFriendAddress1
+0xFriendAddress2
+```
+Then,
+CTRL+O and Enter
+CTRL+X and Enter
+saved 
+
+Secure the files:
+
+```bash
+chmod 600 wallets.txt wallet.txt
+```
+
+---
 
 ## Configuration
 Customize task parameters via the "Set Transaction Count" menu or by editing the `global` object in `index.js`. Key settings:
