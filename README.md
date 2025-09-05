@@ -181,7 +181,7 @@ If you ever rotate keys, just update wallets.txt and restart: systemctl restart 
 ```bash
 apt install -y screen
 screen -S pharos
-cd cd Pharos-Bot-V7
+cd Pharos-Bot-V7
 node index.js   
 ```
 
