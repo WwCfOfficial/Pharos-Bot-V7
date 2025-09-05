@@ -164,4 +164,4 @@ MIT License. See [LICENSE](LICENSE) for details.
 For educational and testing purposes on the Pharos Testnet only. Use at your own risk. The author is not liable for any losses or damages.
 
 ---
-*Created by [thekazuha787](https://github.com/WwCfOfficial/)*
+*Created by [WwCfOfficial](https://github.com/WwCfOfficial/)*
