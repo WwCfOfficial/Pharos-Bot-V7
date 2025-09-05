@@ -181,8 +181,8 @@ If you ever rotate keys, just update wallets.txt and restart: systemctl restart 
 ```bash
 apt install -y screen
 screen -S pharos
-cd /opt/pharosv5/PHAROSV5
-node main.js   
+cd cd Pharos-Bot-V7
+node index.js   
 ```
 
 # then select options
@@ -191,7 +191,13 @@ node main.js
 ```bash
 screen -r pharos
 ```
+## 6.  Update BOT
+Run both commands on one line
+```bash
+git stash && git pull
+```
 
+This runs git stash first. If it succeeds, then git pull runs.
 
 ---
 
