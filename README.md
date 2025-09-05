@@ -161,6 +161,43 @@ Customize task parameters via the "Set Transaction Count" menu or by editing the
 | 22 | Mint NFTs | Mints NFTs (e.g., Pharos Octopus Badge). |
 | 23 | Set Transaction Count | Configures transaction counts, delays, and proxies. |
 
+
+## 4. Security Notes ⚠️
+
+- **Never** use your real mainnet wallet. Always use fresh keys.  
+- Keep `wallets.txt` safe (`chmod 600`).  
+- If you change private keys or addresses, edit the files and restart:
+  ```bash
+  systemctl restart pharosbot
+  ```
+
+## 5. Security tips
+
+Never use a real/mainnet private key here. Use fresh keys for testnets.
+
+Keep wallets.txt permissioned (chmod 600) and the server locked down (SSH key auth, firewall).
+
+If you ever rotate keys, just update wallets.txt and restart: systemctl restart pharosbot.
+```bash
+apt install -y screen
+screen -S pharos
+cd /opt/pharosv5/PHAROSV5
+node main.js   
+```
+
+# then select options
+# Detach:  Ctrl+A, then D
+# Reattach later:
+```bash
+screen -r pharos
+```
+
+
+---
+
+✅ Done! Your PHAROS V5 bot will now run **24/7 on your VPS** and automatically restart after reboot.
+
+
 ## Directory Structure
 ```
 Pharos-Auto-Bot/

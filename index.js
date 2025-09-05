@@ -197,8 +197,8 @@ const asciiBannerLines = [
   "██║         ██║  ██║    ██║  ██║    ██║  ██║    ╚██████╔╝    ███████║",
   "╚═╝         ╚═╝  ╚═╝    ╚═╝  ╚═╝    ╚═╝  ╚═╝     ╚═════╝     ╚══════╝",
   "",
-  "       Pharos Testnet Bot v7.0 - Created By Kazuha787       ",
-  "                  LETS FUCK THIS TESTNET                   ",
+  "       Pharos Testnet Bot v7.0 - Created By WwCfOfficial       ",
+  "                  LETS DO THIS TESTNET EASY                  ",
 ];
 
 // ---- UTILITY FUNCTIONS ----
